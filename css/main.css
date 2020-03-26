@@ -1,11 +1,4 @@
 @font-face {
-	font-family: 'Arial MT';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Arial MT'), url('../font/ARIALMTMEDIUM.woff') format('woff');
-}
-
-@font-face {
     font-family: 'Socialico';
     src:url('../font/Socialico.ttf.woff') format('woff');
     font-weight: normal;
@@ -17,35 +10,42 @@
 	padding: 0px;
 }
 
+body {
+	width: 1280px;
+	margin: 0 auto;
+}
+
 .clearfix:after {
 	content: "";
-	display: table;
 	clear: both;
+	display: block;
+	width: 100%;
 }
 
-header {
+.main-header {
 	background-color: #445162;
 	padding: 50px;
-	padding-bottom: 51px;
+	box-sizing: border-box;
 }
 
-header .product-container {
+.main-header .product-container {
 	width: 50%;
 }
 
-header .img-container {
+.main-header .main-image {
+	display: block;
 	float: right;
 }
 
-header ul, h1 {
+.main-header ul, h1 {
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 	color: #ffffff;
-	font-family: "Arial MT";
+	font-family: Arial;
 	font-size: 20px;
 	font-weight: 400;	
 }
 
-header ul li {
+.main-header ul li {
 	line-height: 32px;
 	list-style-type: none;
 	padding-left: 35px;
@@ -54,34 +54,34 @@ header ul li {
 	background-repeat: no-repeat;
 }
 
-header h1 {
+.main-header h1 {
 	font-size: 60px;
 	line-height: 44px;
 }
 
-header ul {
+.main-header ul {
 	margin-top: 51px;
 }
 
-footer {
+.main-footer {
 	background-color: #445162;
 	padding: 49px 250px 53px;
 }
 
-footer h2 {
+.main-footer h2 {
 	height: 30px;
 	text-align: center;
 	color: #ffffff;
-	font-family: "Arial MT";
+	font-family: Arial;
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 30px;
 }
 
-footer .socials-container {
+.main-footer .socials-container {
 	float: right;
 	color: #ffffff;
-	font-family: "Arial MT";
+	font-family: Arial;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -91,30 +91,30 @@ footer .socials-container {
 	padding-top: 31px;
 }
 
-footer .socials-container li {
+.main-footer .socials-container li {
 	list-style-type: none;
 	list-style-position: inside;
 }
 
 
-footer .socials-container li.skype {
+.main-footer .socials-container li.skype {
 	list-style-image: url(../img/skype_icon.png)
 }
 
-footer .socials-container li.icq {
+.main-footer .socials-container li.icq {
 	list-style-image: url(../img/icq_icon.png)
 }
 
-footer .socials-container li.email {
+.main-footer .socials-container li.email {
 	list-style-image: url(../img/email_icon.png)
 }
 
 
-footer .socials-container li.phone {
+.main-footer .socials-container li.phone {
 	list-style-image: url(../img/phone_icon.png)
 }
 
-footer .socials-buttons-block {
+.main-footer .socials-buttons-block {
 	height: 42px;
 	margin-top: 37px;
 	
@@ -125,42 +125,63 @@ footer .socials-buttons-block {
 	letter-spacing: 1.5px;
 }
 
-footer .feedback-container {
+.main-footer .feedback-container {
 	margin-top: 21px;
 	width: 50%;
 	box-sizing: border-box;
 	text-align: center;
 }
 
-footer input, textarea {
+.main-footer .feedback-form input, textarea {
 	width: 100%;
 	margin-top: 11px;
 	border-radius: 5px;
 	text-align: left;
 	box-sizing: border-box;
+	display: block;
+	outline: none;
 }
 
-footer input {
+.main-footer .feedback-form input {
 	padding-left: 10px;
 	margin-bottom: 11px;
 	height: 40px;
 }
 
-footer input:first {
+.main-footer .feedback-form input::first {
 	margin-top: 0px;
 }
 
-footer textarea {
+.main-footer .feedback-form textarea {
 	height: 170px;
 	padding-left: 10px;
 	padding-top: 13px;
 }
 
-footer input[type=button] {
+.main-footer  .feedback-form input[type="submit"] {
 	height: 40px;
 	width: 140px;
 	text-align: center;
 	padding: 0px;
+	text-transform: uppercase;
+	display: inline-block;
 }
 
+.main-footer  .feedback-form input[type="text"]:hover,
+.main-footer  .feedback-form input[type="email"]:hover,
+.main-footer  .feedback-form textarea:hover {
+  background-color: gray;
+  color: white;
+  border-color: white;
+}
 
+.main-footer .feedback-form input[type="submit"]:hover {
+	background-color: gray;
+	color: white;
+  }
+  
+.main-footer .feedback-form input[type="submit"]:active {
+	background-color:  #ffffff;
+	color:  #445162;
+  }
+  
