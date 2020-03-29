@@ -4,13 +4,12 @@
 		<title>The product page</title>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/about.css"/>
+		<link rel="stylesheet" href="css/dignity.css"/>
 	</head>
 	<body>
-		<!-- <div class="container"> -->
-			<header>
-				<div class="img-container">
-					<img alt="main_img" src="img/Shape_9.png"/>
-				</div>
+			<header class="main-header clearfix">
+				<img class="main-image" alt="main_img" src="img/Shape_9.png" alt="procuct image"  width="469" height="214"/>
 				<div class="product-contaner">
 					<h1>Product Name</h1>
 					<ul>
@@ -20,15 +19,53 @@
 						<li>Associate the page with the payment system</li>
 					</ul>
 				</div>
-				<div class="clearfix"/>
 			</header>
 			
 			<main>
-				<section>
-					<h2>About our product</h2>
+				<section class="section-about clearfix">
+					<img class="video-wrp" src="img/video.png" alt="about-video" width="430" height="245"/>
+					<div class="about-wrp">
+						<h2>About your product</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex,
+							magni, explicabo veniam incidunt in quam sapiente ut ipsum.
+						</p>
+						<p>
+							Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa
+							vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores.
+							Sequi itaque, unde perferendis nemo debitis dolor.
+						</p>
+					</div>
 				</section>
-				<section>
+				<section class="section-dignity clearfix">
 					<h2>Dignity and pluses of the product</h2>
+					<ul>
+						<li>
+							Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam.
+							Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						</li>
+						<li>
+							Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam.
+							Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						</li>
+						<li>
+							Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam.
+							Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						</li>
+						<li>
+							Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam.
+							Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						</li>
+						<li>
+							Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam.
+							Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						</li>
+						<li>
+							Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam.
+							Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						</li>
+					</ul>
 				</section>
 				<section>
 					<h2>Screenshots</h2>
@@ -41,7 +78,7 @@
 				</section>
 			</main>
 			
-			<footer>
+			<footer class="main-footer">
 				<h2>Contacts</h2>
 				<div class="socials-container">
 					<ul>
@@ -56,10 +93,12 @@
 				</div>
 				
 				<div class="feedback-container">
-					<input type="text" placeholder="Your name:"/><br/>
-					<input type="text" placeholder="Your email:"/><br/>
-					<textarea placeholder="Your message:"></textarea><br/>
-					<input type="button" value="SEND"/>
+					<form class="feedback-form" action="#" method="POST">
+						<input type="text" placeholder="Your name:"/>
+						<input type="email" placeholder="Your email:"/>
+						<textarea placeholder="Your message:"></textarea>
+						<input type="submit" value="send"/>
+					</form>
 				</div>
 				<div class=".clearfix"/>				
 			</footer>		
