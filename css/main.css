@@ -212,6 +212,165 @@ margin: 0;
 	padding: 0 15px 0 0;
 }
 
+/* reviews block */
+
+.reviews-section {
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+
+	color: #333333;
+	background-color: #f5f5f5;
+
+	font-family: Arial;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.reviews-header {
+	width: 100%;
+	text-align: center;
+	margin: 0 0 35px 0;
+
+	color: #445161;
+	font-family: Arial;
+	font-style: normal;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+.reviews-wrapper {
+	width: 50%;
+}
+
+.reviews-article {
+	margin: 0px 32px 30px 91px;
+	padding: 16px 20px 16px 27px;
+	background-color: #ebebeb;
+	position: relative;
+}
+
+.reviews-article:last-child {
+	margin-bottom: 0;
+}
+
+.reviews-text::before {
+	content: "";
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	left: -91px;
+	border-radius: 50%;
+	background-color: #445161;
+}
+
+.reviews-author {
+	margin: 15px 0 0 0;
+	color: #989898;
+	font-family: Arial;
+
+}
+
+/* buy-it-now block */
+.buy-it-now-section {
+	margin: 50px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.buy-it-now-header {
+	width: 100%;
+	margin: 0 0 30px 0;
+	text-align: center;
+	color: #445161;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.buy-it-now-article {
+	width: 300px;
+	box-sizing: border-box;
+
+	color: #ffffff;
+	background-color: #445162;	
+	border-radius: 10px;
+
+	margin: 0 45px 0 0;
+}
+
+.buy-it-now-article:last-child {
+	margin: 0;
+}
+
+.buy-it-now-article-header {
+	text-align: center;
+	margin: 16px 0 16px 0;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.price-div {
+	height: 71px;
+	box-sizing: border-box;
+	
+	color: #445162;
+	background-color: white;
+	border: 2px solid #445162;
+	
+	font-size: 40px;
+	line-height: 67px;
+	text-align: center;
+}
+
+.buy-it-now-list {
+	margin: 20px 20px 20px 36px;
+}
+
+.buy-it-now-btn {
+	height: 40px;
+	width: 260px;
+	
+	box-sizing: border-box;
+	display: block;
+	
+	margin: 20px;
+	
+	color: #445161;	
+	background-color: white;
+	border: 2px solid #445162;
+	border-radius: 10px;
+
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.buy-it-now-btn:hover {
+	background-color: gray;
+	color: white;
+}
+
+.buy-it-now-btn:active {
+	background-color:  #ffffff;
+	color:  #445162;	
+}
+
+
 
 /* footer block */
 .main-footer {
