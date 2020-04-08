@@ -92,7 +92,8 @@ body {
 .section-about .video-wrp {
     display: block;
     float: right;
-    margin-left: 97px;
+	margin-left: 97px;
+	background-color: #445161;
 }
 
 /* dignity block */
@@ -257,26 +258,45 @@ margin: 0;
 	margin-bottom: 0;
 }
 
-.reviews-text::before {
+.reviews-article::before {
 	content: "";
 	width: 75px;
 	height: 75px;
 	position: absolute;
 	left: -91px;
+	top: 0px;
 	border-radius: 50%;
 	background-color: #445161;
+}
+
+.reviews-text {
+	position: relative;
+}
+
+.reviews-text:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	background-color: #ebebeb;
+	left: -35px;
+	top: 10px;
+	transform: rotate(45deg);
 }
 
 .reviews-author {
 	margin: 15px 0 0 0;
 	color: #989898;
 	font-family: Arial;
-
+	display: block;
 }
 
 /* buy-it-now block */
 .buy-it-now-section {
-	margin: 50px;
+	margin: 0px;
+	padding: 50px;
+	box-sizing: border-box;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -298,7 +318,7 @@ margin: 0;
 	line-height: 30px;
 }
 
-.buy-it-now-article {
+.buy-it-now-wrp {
 	width: 300px;
 	box-sizing: border-box;
 
@@ -309,11 +329,11 @@ margin: 0;
 	margin: 0 45px 0 0;
 }
 
-.buy-it-now-article:last-child {
+.buy-it-now-wrp:last-child {
 	margin: 0;
 }
 
-.buy-it-now-article-header {
+.buy-it-now-wrp-header {
 	text-align: center;
 	margin: 16px 0 16px 0;
 	font-size: 24px;
