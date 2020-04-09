@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+
+.header {
+    padding: 62px 0 0 41px;
+    background-color: #bcb9b0;
+    background-image: url("../img/photo.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.header-menu-item {
+    list-style-type: none;
+    margin: 0 30px 0 0;
+}
+
+.header-menu-item:last-child {
+    margin: 0;
+}
+
+.header-menu-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-slider {
+    margin: 310px 0 0 0;
+    padding: 0 160px 0 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-slider-to-left {
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border-width: 0 0 3px 3px;
+    border-color: #ffffff;
+    border-style: solid;
+    transform: rotate(45deg);
+}
+
+.header-slider-to-right {
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border-width: 3px 3px 0 0;
+    border-color: #ffffff;
+    border-style: solid;
+    transform: rotate(45deg);
+}
+
+
+.header-slider-content-wrp {
+    max-width: 600px;
+    text-align: center;
+}
+
+.header-slider-subheader {
+    margin: 0;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.header-slider-header {
+    margin: 0 15px 20px 0;
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 52px;
+    font-weight: 400;
+}
+
+.header-slider-desc {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.header-slider-get-btn {
+    margin: 52px 0 0 0;
+    width: 170px;
+    height: 53px;
+    text-transform: uppercase;
+    background-color: #998675;
+    border-radius: 3px;
+    outline: none;
+
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    
+}
+
+
+.header-slider-radio-wrp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 330px 0 42px 0;
+}
+
+.header-slider-radio {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-color: #909092;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.header-slider-radio:last-child {
+    margin: 0;
+}
+
