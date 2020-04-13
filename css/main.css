@@ -340,10 +340,11 @@ margin: 0;
 	line-height: 30px;
 }
 
-.price-div {
+.price-wrp {
 	height: 71px;
 	box-sizing: border-box;
-	
+	display: block;
+
 	color: #445162;
 	background-color: white;
 	border: 2px solid #445162;
@@ -455,7 +456,7 @@ margin: 0;
 	letter-spacing: 1.5px;
 }
 
-.main-footer .feedback-container {
+.main-footer .feedback-form {
 	margin-top: 21px;
 	width: 50%;
 	box-sizing: border-box;
