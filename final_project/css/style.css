@@ -58,7 +58,7 @@ body {
 }
 
 .main-logo {
-    width: 170px;
+    width: 181px;
     height: 11px;
     margin: 0 219px 0 0;
     display: flex;
@@ -76,6 +76,8 @@ body {
 .main-logo-txt {
     font-size: 34px;
     color: white;
+    font-family: Raleway;
+    letter-spacing: -1.36px;
 }
 
 .main-logo:hover .main-logo-icon {
